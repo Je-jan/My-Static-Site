@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
  <!-- Google tag (gtag.js) -->
@@ -11,34 +10,120 @@
 
   gtag('config', 'G-0XCS9Y6BFK');
 </script>
- 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Wonderful Minimalist Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jejan Travel & Trekking</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    .hero {
+      background: url('https://source.unsplash.com/1600x600/?trekking,mountain') no-repeat center center/cover;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .section {
+      padding: 2rem;
+      text-align: center;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .service {
+      background-color: white;
+      padding: 1rem;
+      margin: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+      flex: 1 1 250px;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    form input, form textarea {
+      width: 90%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background-color: #3498db;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Page</h1>
-    </header>
 
-    <main>
-        <section>
-            <h2>About This Page</h2>
-            <p>This is a simple HTML page demonstrating a clean and basic structure. It's designed to be easily readable and understandable.</p>
-        </section>
+<header>
+  <h1>Jejan Travel & Trekking</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-        <section>
-            <h2>Key Features:</h2>
-            <ul>
-                <li>Semantic HTML5 elements (header, main, section, footer)</li>
-                <li>Proper DOCTYPE and character encoding</li>
-                <li>Responsive viewport meta tag</li>
-            </ul>
-        </section>
-    </main>
+<section class="hero">
+  <h2>Explore. Discover. Experience.</h2>
+  <p>Your next adventure begins with Jejan Travel & Trekking.</p>
+</section>
 
-    <footer>
-        <p>&copy; 2025 Wonderful Webpage. All rights reserved.</p>
-    </footer>
+<section id="services" class="section">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="service">
+      <h3>Guided Treks</h3>
+      <p>Join our experienced guides for unforgettable trekking experiences across mountains and valleys.</p>
+    </div>
+    <div class="service">
+      <h3>Custom Tours</h3>
+      <p>Design your own travel itinerary with our help – from solo adventures to family trips.</p>
+    </div>
+    <div class="service">
+      <h3>Camping & Wildlife</h3>
+      <p>Experience nature up-close with our safe and eco-friendly camping and wildlife tours.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required><br>
+    <input type="email" placeholder="Your Email" required><br>
+    <textarea rows="5" placeholder="Your Message" required></textarea><br>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Jejan Travel & Trekking. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
+
